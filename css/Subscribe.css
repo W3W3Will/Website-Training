@@ -1,0 +1,147 @@
+body{
+    background: url(../assets/bgSubscribe.jpg) no-repeat;
+    background-size: cover;
+}
+#new-form {
+    margin-top: 7%;
+    margin-bottom: 7%;
+    margin-left: 35%;
+    width:450px;
+    padding:20px;
+    text-transform: uppercase;
+    background-color: var(--second-color);
+}
+.text{
+    margin-left: 12px;
+    font-size: 12px;
+}
+.titlee{
+    margin-left: 20%;
+    margin-bottom: 20px;
+}
+.input-group {
+    margin:20px 0; 
+    position:relative;
+}
+
+.input-group label {
+    display:inline-block;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    display:block;
+    width:100%;
+    padding:10px;   
+}
+.diff input {
+    display:block;
+    width:9%;
+    padding:0px;   
+}
+.error input {
+    border:3px red solid;
+}
+
+.success input {
+    border:3px green solid;
+}
+
+ .input-group i {
+     position:absolute;
+     right:10px;
+     top:35px;
+     visibility: hidden;
+ }
+
+
+ .success i.fa-check-circle{
+     visibility: visible;
+     color:green;
+ }
+
+ .error i.fa-exclamation-circle {
+    visibility: visible;
+    color:red;
+}
+
+ .input-group p {
+     margin-top: 5px;
+     font-size: 10px;
+     color:red;
+     font-weight: bold;
+     visibility: hidden;
+ }
+
+ .error p {
+     visibility: visible;
+ }
+ .buttonn{
+    margin-left: 20%;
+    width: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--first-color);
+    color: white;
+    border: 1px solid var(--first-color);
+    border-radius: 50px;
+    font-size: var(--normal-font-size);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1rem;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+.buttonn:hover{
+    background-color: #7a5633;
+    color: white;
+}
+.buttonn-outline{
+    width: 280px;
+    background-color: transparent;
+    color: var(--first-color);
+    padding: 5px 10px 5px 0;
+    transition: all 0.4s ease;
+    position: relative;
+}
+.buttonn-outline::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 18%;
+    height: 100%;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 50px;
+    transition: all 0.4s ease-in-out;
+}
+.buttonn-outline i{
+    margin-right: 1.5rem;
+    font-size: var(--h3-font-size);
+    color: white;
+    z-index: 10;
+}
+.buttonn-outline:hover::before{
+    width: 100%;
+    z-index: -1;
+}
+.buttonn-outline:hover{
+    color: #7a5633;
+    z-index: 10;
+}
+::-webkit-input-placeholder{
+    color: black;
+    opacity: 0.5;
+}
+@media (max-width:800px) {
+    #new-form {
+        margin-top: 20%;
+        margin-bottom: 10%;
+        margin-left: 5%;
+        width:400px;
+    }
+}

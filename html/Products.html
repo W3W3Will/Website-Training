@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | VOrskin Official</title>
+    <!-- LINK CSS -->
+    <link rel="stylesheet" href="../css/Home.css"> <!--di link ke home css untuk navbar-->
+    <link rel="stylesheet" href="../css/Products.css">
+    <link rel="stylesheet" href="../css/footer.css">
+     <!-- Font Awesome CDN -->
+     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="header" id="header">
+    <div class="navbar">
+            <img src="../assets/LOGO.png" class="logo2">
+
+        <nav class="nav-menu" id="nav-menu">
+            <ul class="nav-list">
+                <li><a href="Home.html" class="nav-link active">Home</a></li>
+                <li><a href="About.html" class="nav-link">About</a></li>
+                <li><a href="Promotion.html" class="nav-link">Promotions</a></li>
+                <li><a href="Products.html" class="nav-link">Products</a></li>
+                <li><a href="Subscribe.html" class="nav-link">Subscribe</a></li>
+            </ul>
+        </nav>
+        <div class="nav-toggle" id="nav-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </div>
+</header>
+
+    <!-- CONTENT -->
+    <div class="filter">
+        <div id="buttons">
+            <button class="btn" onclick="filters('all')">ALL</button>
+            <button class="btn" onclick="filters('Skin')">SKIN CARE</button>
+            <button class="btn" onclick="filters('Body')">BODY CARE</button>
+        </div>
+        <section>
+          <div class="column">
+            <div id="row">
+            
+              <div class="menu Skin">
+                <div class="product" data-name="p-1">
+                  <img src="../product/product1.jpg" alt="">
+                  <h3>VOrskin Miraculous Divine Aura Ampoule</h3>
+                  <div class="price">$4.00</div>
+               </div>
+              </div>
+             
+              <div class="menu Skin">
+                <div class="product" data-name="p-2">
+                  <img src="../product/product2.jpg" alt="">
+                  <h3>VOrskin Perfect Divine Combo</h3>
+                  <div class="price">$2.05</div>
+               </div>
+              </div>
+            
+              <div class="menu Skin">
+                <div class="product" data-name="p-3">
+                  <img src="../product/product3.jpg" alt="">
+                  <h3>VOrskin Glow Concentrate Cream</h3>
+                  <div class="price">$3.10</div>
+               </div>
+              </div>
+             
+              <div class="menu Body">
+                <div class="product" data-name="p-4">
+                  <img src="../product/product4.jpg" alt="">
+                  <h3>VOrskin Glowing Serum</h3>
+                  <div class="price">$3.25</div>
+               </div>
+              </div>
+             
+              <div class="menu Body">
+                <div class="product" data-name="p-5">
+                  <img src="../product/product5.jpg" alt="">
+                  <h3>VOrskin Shining Mist</h3>
+                  <div class="price">$2.00</div>
+               </div>
+              </div>
+              
+              <div class="menu Skin">
+                <div class="product" data-name="p-6">
+                  <img src="../product/product6.jpg" alt="">
+                  <h3>VOrskin Enchanted Lip Balm</h3>
+                  <div class="price">$8.00</div>
+               </div>
+              </div>
+           
+              <div class="menu Body">
+                <div class="product" data-name="p-7">
+                  <img src="../product/product7.jpg" alt="">
+                  <h3>VOrskin Blackberry Serum</h3>
+                  <div class="price">$7.59</div>
+               </div>
+              </div>
+              
+              <div class="menu Body">
+                <div class="product" data-name="p-8">
+                  <img src="../product/product8.jpg" alt="">
+                  <h3>VOrskin Shimmering Cleansing</h3>
+                  <div class="price">$9.99</div>
+               </div>
+              </div>
+             
+            </div>
+          </div>
+        </section>
+    </div>
+
+    <div class="products-preview">
+         
+      <div class="preview" data-target="p-1">
+         <i class="fas fa-times"></i>
+         <img src="../product/product1.jpg" alt="">
+         <h3>VOrskin Miraculous Divine Aura Ampoule</h3>
+         <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <span>( 250 )</span>
+         </div>
+         <p>Brightening Glow Serum can brighten facial skin and make facial skin fresher.</p>
+         <div class="price">$4.00</div>
+         <div class="buttons">
+            <a href="#" class="buy">buy now</a>
+            <a href="#" class="cart">add to cart</a>
+         </div>
+      </div>
+   
+      <div class="preview" data-target="p-2">
+         <i class="fas fa-times"></i>
+         <img src="../product/product2.jpg" alt="">
+         <h3>VOrskin Perfect Divine Combo</h3>
+         <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <span>( 450 )</span>
+         </div>
+         <p>Helps treat facial skin that looks moist and helps maintain the skin's natural barrier while brightening the face.</p>
+         <div class="price">$2.05</div>
+         <div class="buttons">
+            <a href="#" class="buy">buy now</a>
+            <a href="#" class="cart">add to cart</a>
+         </div>
+      </div>
+   
+      <div class="preview" data-target="p-3">
+         <i class="fas fa-times"></i>
+         <img src="../product/product3.jpg" alt="">
+         <h3>VOrskin Glow Concentrate Cream</h3>
+         <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <span>( 99 )</span>
+         </div>
+         <p>A cream that helps maintain skin moisture, helps brighten, and maintain skin elasticity.</p>
+         <div class="price">$3.10</div>
+         <div class="buttons">
+            <a href="#" class="buy">buy now</a>
+            <a href="#" class="cart">add to cart</a>
+         </div>
+      </div>
+   
+      <div class="preview" data-target="p-4">
+         <i class="fas fa-times"></i>
+         <img src="../product/product4.jpg" alt="">
+         <h3>VOrskin Glowing Serum</h3>
+         <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <span>( 200 )</span>
+         </div>
+         <p>Developed with a dermatological formula, A serum specially formulated for oily and acne-prone skin.</p>
+         <div class="price">$3.25</div>
+         <div class="buttons">
+            <a href="#" class="buy">buy now</a>
+            <a href="#" class="cart">add to cart</a>
+         </div>
+      </div>
+   
+      <div class="preview" data-target="p-5">
+         <i class="fas fa-times"></i>
+         <img src="../product/product5.jpg" alt="">
+         <h3>VOrskin Shining Mist</h3>
+         <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <span>( 199 )</span>
+         </div>
+         <p>The first perfume product that has been clinically tested to help improve sleep quality. Has a powdery aroma that will make the brain relaxed by the scent of carnation, and a touch of coconut.</p>
+         <div class="price">$2.00</div>
+         <div class="buttons">
+            <a href="#" class="buy">buy now</a>
+            <a href="#" class="cart">add to cart</a>
+         </div>
+      </div>
+   
+      <div class="preview" data-target="p-6">
+         <i class="fas fa-times"></i>
+         <img src="../product/product6.jpg" alt="">
+         <h3>VOrskin Enchanted Lip Balm</h3>
+         <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <span>( 170 )</span>
+         </div>
+         <p>VOrskin Enchanted Lip Balm has a moisturizing texture that gives a glossy finish. This product is available in 6 colors that can last long, while still making lips feel soft.</p>
+         <div class="price">$8.00</div>
+         <div class="buttons">
+            <a href="#" class="buy">buy now</a>
+            <a href="#" class="cart">add to cart</a>
+         </div>
+      </div>
+
+      <div class="preview" data-target="p-7">
+         <i class="fas fa-times"></i>
+         <img src="../product/product7.jpg" alt="">
+         <h3>VOrskin Blackberry Serum</h3>
+         <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <span>( 350 )</span>
+         </div>
+         <p>Booster serum with VOrskin technology consists of Ceramides, Probiotics, and Tulsi to help balance the microbiome, and strengthen the skin's protective system.</p>
+         <div class="price">$7.59</div>
+         <div class="buttons">
+            <a href="#" class="buy">buy now</a>
+            <a href="#" class="cart">add to cart</a>
+         </div>
+      </div>
+
+      <div class="preview" data-target="p-8">
+         <i class="fas fa-times"></i>
+         <img src="../product/product8.jpg" alt="">
+         <h3>VOrskin Shimmering Cleansing</h3>
+         <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <span>( 189 )</span>
+         </div>
+         <p>Serum formulated with Kakadu extract, Triple Hyaluronic Molecule, Acetyl Hexapeptide-8 (Anti Aging) to help brighten the face and fight signs of aging. .</p>
+         <div class="price">$9.99</div>
+         <div class="buttons">
+            <a href="#" class="buy">buy now</a>
+            <a href="#" class="cart">add to cart</a>
+         </div>
+      </div>
+      
+   </div>
+
+  <!-- footer -->
+  <footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-section">
+                <h4>company</h4>
+                <ul>
+                    <li><a href="About.html">about us</a></li>
+                    <li><a href="About.html">our services</a></li>
+                    <li><a>privacy policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Shop</h4>
+                <ul>
+                    <li><a href="Products.html">Skin Care</a></li>
+                    <li><a href="Products.html">Body Care</a></li>
+                    <li><a href="Promotion.html">Discounts</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>follow us</h4>
+                <div class="social-links">
+                    <a href="https://id-id.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/i/flow/login"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/?hl=id"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+  </footer>
+  
+  <!-- Javascript Link -->
+    <script src="../javascript/Navbar.js"></script>
+    <script src="../javascript/Products.js"></script>
+</body>
+</html>

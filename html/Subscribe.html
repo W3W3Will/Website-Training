@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>,
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscribe | VOrskin Official</title>
+    <!-- Link css -->
+    <link rel="stylesheet" href="../css/Subscribe.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/Home.css"> <!--di link ke home css untuk navbar-->
+    <!-- Font Awesome CDN -->
+    <script src="https://kit.fontawesome.com/2bbac3a66c.js" crossorigin="anonymous" ></script>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <header class="header" id="header">
+        <div class="navbar">
+                <img src="../assets/LOGO.png" class="logo2">
+    
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="Home.html" class="nav-link active">Home</a></li>
+                    <li><a href="About.html" class="nav-link">About</a></li>
+                    <li><a href="Promotion.html" class="nav-link">Promotions</a></li>
+                    <li><a href="Products.html" class="nav-link">Products</a></li>
+                    <li><a href="Subscribe.html" class="nav-link">Subscribe</a></li>
+                </ul>
+            </nav>
+            <div class="nav-toggle" id="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- FORM -->
+    <form  id="new-form" action="Home.html" method="GET">
+        <div class="titlee">
+            <h2>Subscribe Now</h2>
+        </div>
+
+        <!-- Name -->
+        <div class="input-group">
+            <label for="Name">Full Name</label>
+            <input type="text" id="Name" placeholder="Full Name">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <p>Error Message</p>
+        </div>
+
+        <!-- EMAIL -->
+        <div class="input-group">
+            <label for="email">email address</label>
+            <input type="email" id="email" placeholder="Email">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <p>Error Message</p>
+        </div>
+
+        <!-- Phone -->
+        <div class="input-group">
+            <label for="phone">phone number</label>
+            <input type="text" id="phone" placeholder="Phone Number">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <p>Error Message</p>
+        </div>
+
+        <!-- Preferences -->
+        <div class="input-group">
+            <label for="preferences">preferences</label>
+            <input type="text" id="preferences" placeholder="Preferences" list="Pref">
+            <datalist id="Pref">
+                <option value="Skin Care"></option>
+                <option value="Body Care"></option>
+            </datalist>
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <p>Error Message</p>
+        </div>
+
+        <div class="input-group diff">
+            <div class="check">
+                <input type="checkbox" id="TestCheck">
+                <label for="terms" class="text">I agree to receive newsletter</label>
+                <p>Error Message</p>
+            </div>
+        </div>
+
+        <button type="submit" class="buttonn">Submit</button>
+    </form>
+
+    <!-- footer -->
+  <footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-section">
+                <h4>company</h4>
+                <ul>
+                    <li><a href="About.html">about us</a></li>
+                    <li><a href="About.html">our services</a></li>
+                    <li><a>privacy policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Shop</h4>
+                <ul>
+                    <li><a href="Products.html">Skin Care</a></li>
+                    <li><a href="Products.html">Body Care</a></li>
+                    <li><a href="Promotion.html">Discounts</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>follow us</h4>
+                <div class="social-links">
+                    <a href="https://id-id.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/i/flow/login"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/?hl=id"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+  </footer>
+
+    <!-- JAVASCRIPT -->
+    <script src="../javascript/Navbar.js"></script>
+    <script src="../javascript/Subscribe.js"></script>
+</body>
+</html>

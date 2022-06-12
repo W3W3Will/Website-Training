@@ -1,0 +1,136 @@
+html{
+    overflow-x: hidden;
+}
+section{
+    padding:2rem 7%;
+}
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.9rem 3rem;
+    font-size: 1.7rem;
+    color:#fff;
+    background: var(--main-color);
+    cursor: pointer;
+}
+
+.btn:hover{
+    letter-spacing: .2rem;
+}
+
+.heading{
+    text-align: center;
+    color:black;
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+}
+
+.heading span{
+    color:var(--first-color);
+    text-transform: uppercase;
+}
+
+/* CONTENT */
+.main{
+    font-size: 65.5%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background:url(../assets/AboutMain.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.main .content{
+    padding-top: 15%;
+    max-width: 60rem;
+}
+
+.main .content h3{
+    font-size: 800%;
+    text-transform: uppercase;
+    color:black;
+}
+
+.main .content p{
+    font-size: 250%;
+    line-height: 1.8;
+    padding:1rem 0;
+    color: black;
+}
+
+
+.mission{
+    font-size: 65.5%;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    background:url(../assets/bgMission.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.mission .content{
+    max-width: 80rem;
+}
+
+.mission .content h3{
+    font-size: 500%;
+    text-transform: uppercase;
+    color: white;
+}
+
+.mission .content p{
+    font-size: 150%;
+    line-height: 1.8;
+    padding:1rem 0;
+    color: white;
+}
+
+
+.about .row{
+    display: flex;
+    align-items: center;
+    background: var(--main-color);
+    flex-wrap: wrap;
+    margin-left: -40px;
+    margin-right: -40px;
+}
+.about .row .image{
+    padding: 5%;
+}
+
+.about .row .image img{
+    width: 100%;
+}
+.about .row .content{
+    flex:1 1 45rem;
+    padding:3%;
+}
+.about .row .content h3{
+    font-size: 300%;
+    color: black;
+}
+.map .row .content h3{
+    padding-left: 5%;
+}
+.about .row .content p{
+    font-size: 100%;
+    color:black;
+    padding-top: 3%;
+    padding-right: 5%;
+    line-height: 1.8;
+}
+.map .row .content p{
+    font-size: 100%;
+    padding-top: 3%;
+    padding-left: 5%;
+    padding-right: 0%;
+    line-height: 1.8;
+}
+
+
+@media (max-width:800px){
+    section{
+        padding:2rem;
+    }
+}

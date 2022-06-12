@@ -1,0 +1,246 @@
+/* CONTENT */
+body .filter{
+    display: flex;
+    padding-top: 8%;
+    flex-direction: column;
+    align-items: center;
+}
+div{
+    display: block;
+}
+#row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+section{
+    margin-left: 20%;
+    margin-right: 20%;
+    min-height: 740px;
+}
+.menu{
+    color: black;
+    width: 350px;
+    height: 450px;
+    text-align: center;
+    margin: 20px;
+    font-size: 10px;
+    display: none;
+}
+#buttons{
+    left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+.show{
+    display: block;
+}
+.btn{
+    border: none;
+    outline: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 13px;
+    padding: 15px 40px;
+    border-radius: 5px;
+    background-color: var(--second-color);
+    cursor: pointer;
+    color: black;
+}
+.btn:hover{
+   background-color: var(--first-color);
+   color: white;
+}
+.container{
+    padding-top: 5%;
+    max-width: 1200px;
+    padding-left: 15%;
+ }
+ .show{
+   display: block;
+} 
+.product{
+    padding-top: 20%;
+    background: #fff;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    outline: .1rem solid #ccc;
+    outline-offset: -1.5rem;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+ }
+ 
+.product:hover{
+    outline: .2rem solid #222;
+    outline-offset: 0;
+ }
+ 
+.product img{
+    height: 50%;
+ }
+ 
+ .product:hover img{
+    transform: scale(.9);
+ }
+ 
+.product h3{
+    padding:.5rem 0;
+    margin: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+    color:#444;
+ }
+ 
+.product:hover h3{
+    color: var(--first-color);
+ }
+ 
+.product .price{
+    font-size: 2rem;
+    color:#444;
+ }
+ 
+ .products-preview{
+    position: fixed;
+    padding-top: 5%;
+    z-index: 5;
+    top:0; left:0;
+    min-height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,.8);
+    display: none;
+    align-items: center;
+    justify-content: center;
+ }
+ 
+ .products-preview .preview{
+    display: none;
+    padding:2rem;
+    text-align: center;
+    background: #fff;
+    position: relative;
+    margin:2rem;
+    width: 50%;
+ }
+ 
+ .products-preview .preview.active{
+    display: inline-block;
+ }
+ 
+ .products-preview .preview img{
+    height: 200px;
+ }
+ 
+ .products-preview .preview .fa-times{
+    position: absolute;
+    top:2rem; right:3rem;
+    cursor: pointer;
+    color:#444;
+    font-size: 2rem;
+ }
+
+ .products-preview .preview h3{
+    color:#444;
+    padding:1rem 0;
+    font-size: 1.7rem;
+ }
+ 
+ .products-preview .preview .stars{
+    font-size: 1.5rem;
+ }
+ 
+ .products-preview .preview .stars i{
+    color: var(--first-color);
+ }
+ 
+ .products-preview .preview .stars span{
+    color:#999;
+ }
+ 
+ .products-preview .preview p{
+    line-height: 1.5;
+    padding:1rem 0;
+    font-size: 1.3rem;
+    color:#777;
+ }
+ 
+ .products-preview .preview .price{
+    font-size: 2rem;
+    color: var(--first-color);
+ }
+ 
+ .products-preview .preview .buttons{
+    display: flex;
+    gap:1.5rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+ }
+ 
+ .products-preview .preview .buttons a{
+    flex:.5 .5 1rem;
+    padding:1rem;
+    font-size: 1.5rem;
+    color:#444;
+    border:.1rem solid #444;
+ }
+ 
+ .products-preview .preview .buttons a.cart:hover{
+   background: #444;
+   color:#fff;
+ }
+ 
+ .products-preview .preview .buttons a.buy:hover{
+    background: #444;
+    color:#fff;
+ }
+
+ 
+ @media (max-width : 800px){
+   .products-preview .preview{
+      padding:2rem;
+      margin:2rem;
+      width: 70%;
+   }
+   .products-preview .preview img{
+      height: 180px;
+   }
+   
+   .products-preview .preview .fa-times{
+      top:1.5rem; right:2rem;
+      font-size: 1.5rem;
+   }
+  
+   .products-preview .preview h3{
+      padding:1rem 0;
+      font-size: 1.3rem;
+   }
+   
+   .products-preview .preview .stars{
+      font-size: 1rem;
+   }
+         
+   .products-preview .preview p{
+      font-size: 1rem;
+   }
+   
+   .products-preview .preview .price{
+      font-size: 1.6rem;
+   }
+   
+   .products-preview .preview .buttons{
+      margin-top: 1.5rem;
+   }
+   
+   .products-preview .preview .buttons a{
+      font-size: 1rem;
+   }
+   body .filter{
+      padding-top: 25%;
+  }
+ }
